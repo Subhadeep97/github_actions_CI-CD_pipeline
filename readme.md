@@ -13,15 +13,14 @@ This  Flask application with a complete CI/CD pipeline using GitHub Actions. Per
 
 1. **Clone this repository**
 ```bash
-git https://github.com/vijaykankane/CICD-assignment2.git
+git https://github.com/Subhadeep97/github_actions_CI-CD_pipeline.git
 
 ```
 
 2. **Create a virtual environment**
 ```bash
 python -m venv venv
-# On Windows:
-venv\Scripts\activate
+
 # On Mac/Linux:
 source venv/bin/activate
 ```
@@ -46,7 +45,7 @@ Run tests to make sure everything works:
 pytest -v
 ```
 
-## 🔄 CI/CD Pipeline Explanation
+## CI/CD Pipeline Explanation
 
 Our GitHub Actions workflow automatically:
 
@@ -54,7 +53,7 @@ Our GitHub Actions workflow automatically:
 - Sets up Python environment
 - Installs dependencies
 - Runs all tests
-- Only continues if tests pass ✅
+- Only continues if tests pass
 
 ### 2. **Deploy to Staging** (when you push to `staging` branch)
 - Waits for tests to pass
@@ -67,7 +66,7 @@ Our GitHub Actions workflow automatically:
 - Runs health checks
 - Sends success notification
 
-## 🌟 How to Use the Pipeline
+## How to Use the Pipeline
 
 ### For Regular Development:
 1. Make changes to your code
@@ -85,7 +84,7 @@ Our GitHub Actions workflow automatically:
 3. Tag version (e.g., `v1.0.0`) and publish
 4. GitHub Actions will automatically deploy to production
 
-## 🔧 Setting Up GitHub Secrets (For Real Deployments)
+## Setting Up GitHub Secrets (For Real Deployments)
 
 When you're ready for real deployments, you'll need to add secrets:
 
@@ -101,7 +100,7 @@ When you're ready for real deployments, you'll need to add secrets:
 | `DEPLOY_KEY` | SSH key for deployment | `-----BEGIN PRIVATE KEY-----...` |
 | `API_TOKEN` | Deployment service token | `abc123xyz789` |
 
-## 📊 Workflow Status Badges
+## Workflow Status Badges
 
 The `.github/workflows/ci-cd.yml` file contains our pipeline. Here's what each part does:
 
