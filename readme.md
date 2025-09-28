@@ -66,7 +66,7 @@ Our GitHub Actions workflow automatically:
 - Runs health checks
 - Sends success notification
 
-## How to Use the Pipeline
+## 6. How to Use the Pipeline
 
 ### For Regular Development:
 1. Make changes to your code
@@ -91,14 +91,7 @@ When you're ready for real deployments, you'll need to add secrets:
 1. Go to your GitHub repository
 2. Click **Settings** → **Secrets and variables** → **Actions**
 3. Click **New repository secret**
-4. Add these secrets:
 
-| Secret Name | Description | Example Value |
-|------------|-------------|---------------|
-| `STAGING_SERVER_HOST` | Staging server address | `staging.yourapp.com` |
-| `PRODUCTION_SERVER_HOST` | Production server address | `yourapp.com` |
-| `DEPLOY_KEY` | SSH key for deployment | `-----BEGIN PRIVATE KEY-----...` |
-| `API_TOKEN` | Deployment service token | `abc123xyz789` |
 
 ## Workflow Status Badges
 
