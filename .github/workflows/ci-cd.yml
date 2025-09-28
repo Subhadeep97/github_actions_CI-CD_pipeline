@@ -71,15 +71,15 @@ jobs:
     # Step 4: Deploy to staging (simulation - just print message)
     - name: Deploy to Staging Environment
       run: |
-        echo "🚀 Deploying to STAGING environment..."
-        echo "✅ App deployed to staging server!"
-        echo "🌐 Staging URL: https://your-app-staging.herokuapp.com"
+        echo " Deploying to STAGING environment..."
+        echo " App deployed to staging server!"
+        echo " Staging URL: https://your-app-staging.herokuapp.com"
     
     # Step 5: Run health check
     - name: Health Check - Staging
       run: |
-        echo "🏥 Running health check on staging..."
-        echo "✅ Staging environment is healthy!"
+        echo " Running health check on staging..."
+        echo " Staging environment is healthy!"
 
   # Job 3: Deploy to Production (runs only on release)
   deploy-production:
@@ -107,18 +107,18 @@ jobs:
     # Step 4: Deploy to production (simulation - just print message)
     - name: Deploy to Production Environment
       run: |
-        echo "🚀 Deploying to PRODUCTION environment..."
-        echo "✅ App deployed to production server!"
-        echo "🌐 Production URL: https://your-app.herokuapp.com"
+        echo " Deploying to PRODUCTION environment..."
+        echo " App deployed to production server!"
+        echo " Production URL: https://your-app.herokuapp.com"
     
     # Step 5: Run health check
     - name: Health Check - Production
       run: |
-        echo "🏥 Running health check on production..."
-        echo "✅ Production environment is healthy!"
+        echo " Running health check on production..."
+        echo " Production environment is healthy!"
     
     # Step 6: Send notification (simulation)
     - name: Send Success Notification
       run: |
-        echo "📧 Sending success notification..."
-        echo "✅ Deployment successful! Version ${{ github.event.release.tag_name }} is live!"
+        echo " Sending success notification..."
+        echo " Deployment successful! Version ${{ github.event.release.tag_name }} is live!"
