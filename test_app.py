@@ -1,4 +1,4 @@
-# Simple Tests for Beginners
+
 import pytest
 from app import app, add_numbers, multiply_numbers
 

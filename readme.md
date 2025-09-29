@@ -32,8 +32,6 @@ pip install -r requirements.txt
 python app.py
 
 
-5. **Visit your app**
-Open your browser and go to: http://localhost:5000
 
 ### Test the Application
 
@@ -65,7 +63,7 @@ Our GitHub Actions workflow automatically:
 - Runs health checks
 - Sends success notification
 
-## 6. How to Use the Pipeline
+## 5. How to Use the Pipeline
 
 ### For Regular Development:
 1. Make changes to your code
@@ -94,7 +92,7 @@ When you're ready for real deployments, you'll need to add secrets:
 
 ## Workflow Status Badges
 
-The `.github/workflows/ci-cd.yml` file contains our pipeline. Here's what each part does:
+The `.github/workflows/ci-cd.yml` file contains the pipeline. Here's what each part does:
 
 ---yaml
 # Trigger conditions
