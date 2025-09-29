@@ -90,11 +90,7 @@ When you're ready for real deployments, you'll need to add secrets:
 3. Click **New repository secret**
 
 
-## Workflow Status Badges
 
-The `.github/workflows/ci-cd.yml` file contains the pipeline. Here's what each part does:
-
----yaml
 # Trigger conditions
 on:
   push:
