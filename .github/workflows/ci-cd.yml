@@ -1,5 +1,4 @@
-# GitHub Actions CI/CD Pipeline for Beginners
-# This file should be saved as .github/workflows/ci-cd.yml
+# CI/CD Pipeline Workflow
 
 name: CI/CD Pipeline
 
@@ -49,7 +48,7 @@ jobs:
     name: Deploy to Staging
     runs-on: ubuntu-latest
     needs: test  # Wait for tests to pass
-    if: github.ref == 'refs/heads/staging'  # Only run on staging branch
+    if: github.ref == 'refs/heads/staging'  
     
     steps:
     # Step 1: Get the code

@@ -1,7 +1,6 @@
 # Flask CI/CD Pipeline 
 
-This  Flask application with a complete CI/CD pipeline using GitHub Actions. Perfect for learning DevOps basics!
-
+Flask application with CI/CD pipeline using GitHub Actions.
 
 
 ### Prerequisites
@@ -9,31 +8,29 @@ This  Flask application with a complete CI/CD pipeline using GitHub Actions. Per
 - Git
 - GitHub account
 
-### Local Setup
+## Local Setup
 
 1. **Clone this repository**
-```bash
+---bash
 git https://github.com/Subhadeep97/github_actions_CI-CD_pipeline.git
 
-```
+
 
 2. **Create a virtual environment**
-```bash
+---bash
 python -m venv venv
-
-# On Mac/Linux:
 source venv/bin/activate
-```
+
 
 3. **Install dependencies**
-```bash
+---bash
 pip install -r requirements.txt
-```
+
 
 4. **Run the application**
-```bash
+---bash
 python app.py
-```
+
 
 5. **Visit your app**
 Open your browser and go to: http://localhost:5000
@@ -41,9 +38,11 @@ Open your browser and go to: http://localhost:5000
 ### Test the Application
 
 Run tests to make sure everything works:
-```bash
+---bash
 pytest -v
-```
+
+------
+
 
 ## CI/CD Pipeline Explanation
 
@@ -97,7 +96,7 @@ When you're ready for real deployments, you'll need to add secrets:
 
 The `.github/workflows/ci-cd.yml` file contains our pipeline. Here's what each part does:
 
-```yaml
+---yaml
 # Trigger conditions
 on:
   push:
